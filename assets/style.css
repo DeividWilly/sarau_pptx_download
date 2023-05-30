@@ -1,0 +1,53 @@
+
+.background-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+}
+
+    .background-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: blur(4px);
+}
+
+.landing-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+}
+
+.download-button {
+      background-color: #27ae60;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 4px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+      background-color: #219653;
+}
+
+@media screen and (max-width: 768px) {
+		.landing-container {
+				padding: 20px;
+      }
+}
+
+@media screen and (max-width: 576px) {
+      .landing-container {
+        height: auto;
+        text-align: center;
+      }
+}
